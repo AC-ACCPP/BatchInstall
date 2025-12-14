@@ -49,7 +49,7 @@ echo                     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                   
 echo                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      
 echo                                    xxxxxxxxxxxxxxxxxxxxx                 
-echo                                                                           (v.4.0.0.1)
+echo                                                                           (v.4.0.0.2)
 echo.
 echo.
 echo Checking currently installed files, this may take a moment...
@@ -152,8 +152,8 @@ goto curl_Check
 :ac_Download
 	echo.
 	echo.
-	echo Downloading Asheron's Call from http://content.turbine.com/sites/clientdl/ac1/ac1install.exe, this may take a few minutes...
-	curl.exe --output "%CD%\ac1install.exe" --url http://content.turbine.com/sites/clientdl/ac1/ac1install.exe
+	echo Downloading Asheron's Call from WebArchive, this may take a few minutes...
+	curl.exe --output "%CD%\ac1install.exe" --url https://web.archive.org/web/20201121104423/http://content.turbine.com/sites/clientdl/ac1/ac1install.exe
 	echo Download complete
 	echo Launching the installer...
 	"%CD%\ac1install.exe"
@@ -409,4 +409,5 @@ echo.
 echo Installation complete
 echo.
 echo.
+
 pause
